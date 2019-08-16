@@ -1,0 +1,123 @@
+<div class="card-wrapper col-lg-4">
+	<div class="for-style">
+	<div class="imagine-post" style="background-image: url(/assets/images/siteground/pachete.jpg)">
+		{% if post.category %}
+		<a href="{{site.url }}/{{ post.category }}/index.html"><span class="categ">{{ post.category | upcase }}</span></a>
+		{% endif %}
+	</div>
+	<div class="footer-post">
+		<div class="bara-titlu">
+				<h4>{{ post.title }}</h4>
+		</div>
+		<div class="pret text-center">
+			<p><span>de la <span style="font-size: 35px; font-weight: 700;">2 </span><span class="align-top" style="font-size: 14px;font-weight: 700;">90<span style="margin-left: -24px;">LEI/buc</span></p>
+		</div>
+		<div class="p-2 text-center">
+			<p>{{ post.descriere }}</p>
+		</div>
+		<hr>
+		<div class="button-modal text-center">
+			<button data-toggle="modal" data-target="#exampleModal">VEZI DIMENSIUNI</button>
+		</div>
+	</div>
+	</div>
+</div>
+
+<style>
+	.button-modal {
+		margin: 5px;
+	}
+	.pret {
+		border-bottom: solid 1px lightgray;
+	}
+	.categ {
+		background-color: transparent;
+    background-image: linear-gradient(260deg, #8062d4 0%, #41dcab 100%);
+		color: white;
+		font-weight: 500;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+		margin-top: 5px;
+		font-size: 13px;
+	}
+	.author-thumb {
+		width: 50px;
+    height: 50px;
+    float: right;
+    background-size: cover;
+    border-radius: 100px;
+    box-shadow: 0 0 8px lightgrey;
+    border: solid #41dcab;
+    position: relative;
+    bottom: 7px;
+	}
+	.for-style {
+		border: 1px solid #dddddd7d;
+    box-shadow: 0 0 20px #F0F0F0;
+		border-radius: 4px;
+	}
+	.card-wrapper {
+		padding-left: 10px;
+		padding-bottom: 20px;
+	}
+	.for-style:hover {
+		box-shadow: 0 0 0 0 white;
+		transition: all 0.5s;
+	}
+	.imagine-post {
+		height: 215px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		background-position: center;
+	}
+	.imagine-post a:hover {
+		text-decoration: none;
+	}
+	.footer-post .bara-titlu {
+		background-color: black !important;
+		color: white;
+		text-align: center;
+	}
+	.footer-post {
+	}
+	.footer-post hr {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.footer-post h4 {
+		font-size: 28px;
+		font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+		padding-top: 10px;
+		margin-bottom: 2px;
+	}
+	
+	.footer-post p {
+		margin-bottom: 10px;
+		height: 42px;
+		overflow: hidden;
+		line-height: 1.7;
+    font-size: 14px;
+		font-style: italic;
+	}
+	.footer-post button {
+		background-color: transparent;
+    background-image: linear-gradient(260deg, #8062d4 0%, #41dcab 100%);
+    text-decoration: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+		border: none;
+		color: white;
+		border-radius: 3px;
+		text-transform: uppercase;
+		padding: 7px 16px;
+		font-weight: 600;
+	}
+	.footer-post button:hover {
+		box-shadow: none;
+	}
+
+</style>

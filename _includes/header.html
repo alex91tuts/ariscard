@@ -1,0 +1,102 @@
+
+<header class="site-header" role="banner">
+<nav class="navbar navbar-expand-lg navbar-light" id="navbar-spy">
+	<a class="navbar-brand logo-text " href="index.html">
+		<img src="{{ site.url }}/assets/images/logo.png" height="50" class="logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/index.html">ACASA <span class="sr-only">(current)</span></a>
+      </li>
+			<li class="nav-item active">
+        <a class="nav-link" href="/despre.html">DESPRE <span class="sr-only">(current)</span></a>
+      </li>
+			<li class="nav-item active">
+        <a class="nav-link" href="/carduri-aris.html">CARDURI <span class="sr-only">(current)</span></a>
+      </li>
+			<li class="nav-item active">
+        <a class="nav-link" href="/intrebari-frecvente.html">ÎNTREBĂRI <span class="sr-only">(current)</span></a>
+      </li>
+			<li class="nav-item active">
+        <a class="nav-link" href="/contact.html">CONTACT <span class="sr-only">(current)</span></a>
+      </li>
+			</ul>
+  </div>
+</nav>
+</header>
+
+<style>
+	.above-header {
+		max-width: 1600px;
+	}
+	.logo {
+		margin-top: -4px;
+	}
+	.icon-box i {
+		font-size: 41px;
+    color: #3e7dbd;
+    margin-right: 10px;
+	}
+	.group-det {
+		display: inline-flex;
+		position: relative;
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	.icon-detail h3{
+		color: #3e7dbd;
+    font-size: 17px;
+		margin-bottom: 3px;
+	}
+	.icon-detail p {
+		font-size: 13px;
+    font-weight: 400;
+		color: gray;
+	}
+	.dropdown-item {
+		color: black !important;
+	}
+	.nav-link {
+		background-color: #3e7dbd;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border: none;
+    color: white !important;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    font-weight: 600;
+		transition: all 1s;
+	}
+	.nav-link:hover {
+		background-image: linear-gradient(130deg, #8062d4 0%, #41dcab 100%);
+	}
+	.nav-item {
+		margin-right: 5px;
+	}
+	@media(max-width: 600px) {
+		.above-header {
+			display: none;
+		}
+		.nav-link {
+			background-color: transparent;
+			background-image: none;
+			box-shadow: none;
+			border: none;
+			border-radius: 0;
+			text-transform: uppercase;
+			padding: 7px 16px;
+			font-weight: 600;
+			transition: all 1s;
+			color: Black !important;
+			}
+	.nav-link:hover {
+		background-image: none;
+	}
+} 
+</style>
